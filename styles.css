@@ -1,0 +1,171 @@
+body {
+
+	background-color: white;
+
+}
+
+
+
+
+.container1 {
+
+
+/*border: solid;
+border-color: orange; */
+
+width: 75%;
+padding: 10px;
+background: linear-gradient(to right, #a3aaaf, #c9d2d8);
+
+/*
+font-size: 16px;
+font-weight: normal;
+font-family: Verdana, Helvetica, sans-serif;
+ same as above, another way to write this */
+
+font: normal 16px Verdana, Helvetica, sans-serif;
+
+margin-top: 200px;
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 10px;
+
+/* shadow effect. 3rd setting is blur...you will want to use that */
+/*MUST have at least two arguments, cant have just bottom or side shadow*/
+box-shadow: 10px 1px 100px ;
+
+
+}
+
+.container2 {
+
+
+
+/*border: solid;
+border-color: orange; */
+
+width: 75%;
+padding: 10px;
+background: linear-gradient(to right, #a3aaaf, #c9d2d8);
+
+/*
+font-size: 16px;
+font-weight: normal;
+font-family: Verdana, Helvetica, sans-serif;
+ same as above, another way to write this */
+
+font: normal 16px Verdana, Helvetica, sans-serif;
+
+margin-top: 100px;
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 10px;
+
+/* shadow effect. 3rd setting is blur...you will want to use that */
+/*MUST have at least two arguments, cant have just bottom or side shadow*/
+box-shadow: 10px 1px 100px ;
+
+}
+
+
+/* could use a class to perform a simple function, such as changing text to red */
+.redText {
+
+	color: red;
+
+}
+
+
+
+
+
+
+
+
+/* HORIZONTAL NAVIGATION BAR */
+/* here are two ways to create a horizontal navigation bar. Using inline or floating list items*/
+li {
+     float: left;
+    /* */
+    /* display: inline;*/
+}
+
+li a {
+    /*delete this if displaying inline instead of float */
+    display: block; /*just makes all the list items appear in a big block so you can select whole block to make it work*/
+     
+    
+    color: white; /* text of links is white */
+    text-align: center;/* links are in center of block */
+    padding: 14px 16px; /* block padding */
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+/* active class sets colors/background of active menu pages. HTML side will designate current page link is active one */
+.active {
+    background-color: #4CAF50;
+}
+
+/* =================Locking menu and logo at top================================================================ */
+
+ul#mainMenu  {
+
+/* let's remove the bullets and the margins and padding from the list: 
+		There are two ways to create a horizontal navigation bar. Using inline or floating list items (SEE li {})
+	*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /*  overflow:hidden is added to the ul element to prevent li elements from going outside of the list.
+
+	 fix menu at top */
+	position: fixed;
+	top: 100px;
+    width: 100%;
+
+
+
+
+    /* background: linear-gradient(direction, color-stop1, color-stop2, ...); */
+    background-color: #333;
+}
+
+
+
+
+
+#logo {
+
+width: 100%;
+background: linear-gradient(to right, #33cc33, #b3ffb3);
+position: fixed;
+top: 0;
+
+text-align: left;
+font: normal 25px Josefin Sans, sans-serif;
+padding-left: 20px;
+
+}
+
+img#greta1 {
+
+	
+	border-style: solid;
+	border-color: black;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 25%;
+	height: 25%;
+	border-radius: 20px ;
+	overflow: auto;
+	
+}
+
+.clearfix {
+    overflow: auto;
+}
